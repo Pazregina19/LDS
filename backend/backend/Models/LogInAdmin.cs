@@ -1,7 +1,7 @@
 
 namespace backend.Models
 {
-    public class LogEstafeta
+    public class LogAdmin
     {
         ///add your methods here
     }
