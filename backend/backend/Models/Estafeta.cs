@@ -5,10 +5,10 @@ using backend.Models.Enums;
 
 namespace backend.Models
 {
-    [Table("Cliente")]
-    public class Cliente : User
+    [Table("Estafeta")]
+    public class Estafeta : User
     {
-         [StringLength(13)]
+        [StringLength(13)]
         public string? Contacto { get; set; }
 
         [StringLength(255)]
@@ -17,12 +17,12 @@ namespace backend.Models
         [StringLength(10)]
         public string? CodigoPostal { get; set; }
 
-        public ICollection<LogCliente>? LogsClientes { get; set; }
-        public ICollection<Encomenda>? Encomendas { get; set; }
-
-        public Cliente() : base()
+        public ICollection<LogEstafeta> logEstafetas { get; set; }
+        
+        public Estafeta() : base()
         {
-            UserType = UserType.Cliente;
+            UserType = UserType.Estafeta;
         }
+
     }
 }
