@@ -14,10 +14,17 @@ namespace backend.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly ICliente _cliente;
+        private readonly IUserStatus _userStatus;
 
-        public ClienteController(ICliente cliente)
+        /// <summary>
+        /// Initializes a new instance to cliente controller with necessarie services
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <param name="userStatus"></param>
+        public ClienteController(ICliente cliente, IUserStatus userStatus)
         {
             _cliente = cliente;
+            _userStatus = userStatus;
         }
 
         /// <summary>
@@ -107,11 +114,59 @@ namespace backend.Controllers
             {
                 return BadRequest(new { Message = e.Message });
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return StatusCode(500, new { Message = "Erro ao atualizar dados cliente", Detail = e.Message });
             }
 
+        }
+
+        /// <summary>
+        /// Activates a specific Cliente
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Success message or eeror message</returns>
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}/ Activate")]
+        public async Task<IActionResult> Activate(int id)
+        {
+            try
+            {
+                await _userStatus.ActivateAsync(id);
+                return Ok(new { Message = "Cliente ativado com sucesso." });
+            }
+            catch (AppExceeption e)
+            {
+                return BadRequest(new { Message = e.Message });
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, new { Message = "Erro do siistema ao ativar cliente", Detail = e.Message });
+            }
+        }
+
+        /// <summary>
+        /// Inactivates a specific Cliente
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Success message or eeror message</returns>
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}/ Inactivate")]
+        public async Task<IActionResult> Inactivate(int id)
+        {
+            try
+            {
+                await _userStatus.InactivateAsync(id);
+                return Ok(new { Message = "Cliente ativado com sucesso." });
+            }
+            catch (AppExceeption e)
+            {
+                return BadRequest(new { Message = e.Message });
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, new { Message = "Erro do siistema ao inativar cliente", Detail = e.Message });
+            }
         }
     }
 }

@@ -11,9 +11,8 @@ namespace backend.Interfaces
         /// Interface for clients logins management
         /// </summary>
         /// <param name="ClienteId"></param>
-        /// <param name="atividade"></param>
         /// <returns></returns>
-        Task<IResult> AddLogInCliente(int ClienteId, string? atividade);
+        Task<IResult> AddLogInCliente(int ClienteId);
 
         /// <summary>
         /// Gets all logs of a client

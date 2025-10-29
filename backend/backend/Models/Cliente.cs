@@ -8,7 +8,7 @@ namespace backend.Models
     [Table("Cliente")]
     public class Cliente : User
     {
-         [StringLength(13)]
+        [StringLength(13)]
         public string? Contacto { get; set; }
 
         [StringLength(255)]

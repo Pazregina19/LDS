@@ -16,8 +16,9 @@ namespace backend.Controllers
     public class EstafetaController : ControllerBase
     {
         private readonly IEstafeta _estafeta;
+        private readonly IUserStatus _userStatus;
 
-        public EstafetaController(IEstafeta estafeta)
+        public EstafetaController(IEstafeta estafeta, IUserStatus userStatus)
         {
             _estafeta = estafeta;
         }
@@ -109,11 +110,59 @@ namespace backend.Controllers
             {
                 return BadRequest(new { Message = e.Message });
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return StatusCode(500, new { Message = "Erro ao atualizar dados estafeta", Detail = e.Message });
             }
 
+        }
+
+         /// <summary>
+        /// Activates a specific Estafeta
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Success message or eeror message</returns>
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}/ Activate")]
+        public async Task<IActionResult> Activate(int id)
+        {
+            try
+            {
+                await _userStatus.ActivateAsync(id);
+                return Ok(new { Message = "Estafeta ativado com sucesso." });
+            }
+            catch (AppExceeption e)
+            {
+                return BadRequest(new { Message = e.Message });
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, new { Message = "Erro do siistema ao ativar estafeta", Detail = e.Message });
+            }
+        }
+        
+        /// <summary>
+        /// Inactivates a specific Estafeta
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Success message or eeror message</returns>
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}/ Inactivate")]
+        public async Task<IActionResult> Inactivate(int id)
+        {
+            try
+            {
+                await _userStatus.InactivateAsync(id);
+                return Ok(new { Message = "Estafeta ativado com sucesso." });
+            }
+            catch (AppExceeption e)
+            {
+                return BadRequest(new { Message = e.Message });
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, new { Message = "Erro do siistema ao inativar estafeta", Detail = e.Message });
+            }
         }
     }
 }

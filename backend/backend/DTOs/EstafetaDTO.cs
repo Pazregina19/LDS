@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using backend.Models;
+using backend.Models.Enums;
 
 namespace backend.DTOs
 {
@@ -14,6 +15,9 @@ namespace backend.DTOs
 
         [StringLength(10)]
         public string? CodigoPostal { get; set; }
+
+        [Required] 
+        public UserStatus Status { get; set; }
 
     }
 
@@ -71,7 +75,9 @@ namespace backend.DTOs
         [StringLength(50)]
         public string? MarcaVeiculo { get; set; }
 
-       string IPasswordUpdateDTO.currentPassword { get ; set ; }
+        string IPasswordUpdateDTO.currentPassword { get ; set ; }
         string IPasswordUpdateDTO.newPassword { get; set; }
+
+        public UserStatus? Status { get; set; }
     }
 }
