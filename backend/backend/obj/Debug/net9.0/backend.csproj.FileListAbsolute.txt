@@ -26,3 +26,13 @@ C:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\obj\Debug\net9
 C:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\obj\Debug\net9.0\backend.pdb
 C:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\obj\Debug\net9.0\backend.genruntimeconfig.cache
 C:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\obj\Debug\net9.0\ref\backend.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\obj\Debug\net9.0\backend.csproj.AssemblyReference.cache
+c:\Users\igreg\OneDrive\Desktop\2025.2026\LDS\LDS\backend\backend\obj\Debug\net9.0\backend.csproj.Up2Date
