@@ -5,15 +5,15 @@ using backend.Models.Enums;
 
 namespace backend.Models
 {
-    [Table("Encomenda")]
+    [Table("Encomenda", Schema = "dbo")]
     public class Encomenda
     {
         [Key]
-        public int EncomendaId { get; set; }
+        public int encomenda_ID { get; set; }
 
         [Required]
         [ForeignKey("Cliente")]
-        public int ClienteId { get; set; }
+        public int cliente_ID { get; set; }
 
         [Required]
         [StringLength(100)]
@@ -36,6 +36,10 @@ namespace backend.Models
 
         [StringLength(20)]
         public string? TempoEstimado { get; set; }
+
+        //relações
+        public Cliente? Cliente { get; set; }
+        public ICollection<Localizacoes>? Localizacoes { get; set; }
 
         
     }
