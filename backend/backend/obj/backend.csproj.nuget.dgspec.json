@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj": {}
+    "C:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj": {}
   },
   "projects": {
-    "c:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj": {
+    "C:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "c:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj",
+        "projectPath": "C:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\igreg\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\obj\\",
+        "outputPath": "C:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\igreg\\AppData\\Roaming\\NuGet\\NuGet.Config"

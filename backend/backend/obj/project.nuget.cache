@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MCGYHcJGZ7k=",
+  "dgSpecHash": "kACKnx7HmiQ=",
   "success": true,
-  "projectFilePath": "c:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\igreg\\OneDrive\\Desktop\\2025.2026\\LDS\\LDS\\backend\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\igreg\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.10\\microsoft.aspnetcore.authentication.jwtbearer.9.0.10.nupkg.sha512",
     "C:\\Users\\igreg\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
