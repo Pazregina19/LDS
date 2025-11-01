@@ -1,11 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using backend.DTOs;
+
 
 namespace backend.Interfaces
 {
     /// <summary>
-    /// Interface for clients service, extending generic functionality IUser
-    /// </>
+    /// Inteface for the services related to the delivery man entity
+    /// </summary>
+    public interface ICliente : IUser<ClienteCreateDTO, ClienteUpdateDTO, ClienteDTO>
+    {
+        
+    }
+   
+        
+    
 }

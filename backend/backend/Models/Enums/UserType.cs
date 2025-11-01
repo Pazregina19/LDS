@@ -6,7 +6,7 @@ namespace backend.Models.Enums
     {
         Cliente,
         Estafeta,
-        Adminn
+        Admin
     }
 
 }
